@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="navbar-collapse justify-content-end" id="mainMenu">
+                <ul class="navbar-nav flex-row justify-content-evenly">
+                    <li class="nav-item">
+                        <a id="Accueil" href="#presentation" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="Projets" href="#carousel" class="nav-link">Mes Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="musique"><i id="icone" class="fas fa-volume-up fa-3x"></i></button>
+                        <audio id="son" src="../Musique/tobias_weber_-_Between_Worlds_(Instrumental).mp3" autoplay
+                            loop></audio>
+                        <!-- <i class="fas fa-volume-off"></i> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="vitrine" class="position-relative">
+            <video id="background" class="w-100" src="../Video/Pexels Videos 2715412.mp4" autoplay loop></video>
+            <div id="presentation" class="position-absolute front">
+                <div>
+                    <h1 id="titre">Qui Suis-je ?</h1>
+                </div>
+            </div>
+            <div id="paraGauche" class="position-absolute hide left">
+                <div class="d-flex ">
+                    <a id="rd" href="#information"><i class="left fas fa-arrow-right fa-1x"></i></a>
+                    <div class="text">
+                        <p>Sérieux et calme <br>
+                        Je suis force de proposition tout en étant à l'écoute des connaissances et conseils des autres afin de continuer d'évoluer </p>
+                    </div>
+                </div>
+            </div>
+            <div id="paraDroite" class="position-absolute hide right">
+                <div class="d-flex flex-row-reverse ">
+                    <button id="rg"><i class="right fas fa-arrow-left fa-1x"></i></button>
+                    <div class="text text-end">
+                        <p>Créatif et perfectionniste <br> 
+                        Je cherche à montrer les facettes de la vie courante sous des traits nouveaux <br>
+                        J'ai participé au concours Défi vidéo Raconte-moi l'entreprise de 2016.
+                        </p>
+                        <a target="_blank" href="https://www.dailymotion.com/embed/video/x469z3v">Lien vers la vidéo du concours</a>
+                    </div>
+                </div>
+            </div>
+            <div id="information" class="position-absolute d-flex flex-row img-fluid halp">
+                <div class="gauche d-flex flex-row-reverse">
+                    <a id="gauche" href="#information"><img class="w-100 left" src="../img/Ordi-1.png" alt=""></a>
+                </div>
+                <div class="droite d-flex flex-row">
+                    <a id="droite" href="#information"><img class="w-100 right" src="../img/Camera-1.png" alt=""></a>
+                </div>
+            </div>
+
+            <div id="droit" class="position-absolute flex-row justify-content-center centre hide">
+
+                <div class="attribution-block text-center">
+                    <div class="info">
+                        <h2>Musique Utilisée</h2>
+                        <a target="_blank" href="http://dig.ccmixter.org/files/tobias_weber/56664">Between Worlds
+                            (Instrumental)</a> by Aussens@iter (c) copyright 2017 Licensed under a Creative Commons
+                    </div>
+                    <div class="info">
+                        <a target="_blank" href="http://creativecommons.org/licenses/by/3.0/">Attribution (3.0)</a>
+                        license. Ft: (Smiling Cynic)
+                    </div>
+
+                    <div class="info">
+                        <h2>Vidéo Utilisée</h2>
+                        <a target="_blank" href="https://www.pexels.com/fr-fr/video/feu-flamboyant-2715412/">Feu
+                            flamboyant</a> by Gamol
+                    </div>
+                </div>
+            </div>
+
+            <div id="carousel" class="carousel slide hide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://clean3000-e1adf.firebaseapp.com/"><img class="align-middle" src="/img/logo-clean3000.png" alt=""></a>
+                        <p class="align-middle text-center">
+                            Société fictive ayant la demande de numériser les avis de prestations. 
+                        </p>
+                    </div>
+                    <div class="carousel-item ">
+                        <p>
+                            Future Projets en cours de Réalisation.
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between flex-row">
+                <div>
+                    <a id="mention" href="#presentation">Droits d'auteurs</a>
+                </div>
+                <div>
+                    <a href="/PDF/CV.pdf" download="CV.pdf" >Télécharger Mon CV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- https://www.canva.com/design/DADsOMNB2gk/Wi42yOeJ-U6TuaCIKbaaeg/view?utm_content=DADsOMNB2gk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton -->
+
+    <script src="../Javascript/ModuleDroit-Accueil/add.js"></script>
+    <script src="../Javascript/moduleMusique/Music.js"></script>
+    <script src="../Javascript/ModuleAnimation/Animation.js"></script>
+    <script src="https://kit.fontawesome.com/75f7890ac4.js" crossorigin="anonymous"></script>
+    <script src="../Javascript/bootstrap.js"></script>
+</body>
+
+</html>

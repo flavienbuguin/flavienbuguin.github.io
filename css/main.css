@@ -1,0 +1,190 @@
+body{
+    background-color: black;
+}
+
+.front{
+    top: 5%;
+   left: 0;
+   right: 0;
+   text-align: center;
+}
+
+a,.nav-link
+{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:aqua;
+    transition: none;
+}
+a:hover,.nav-link:hover
+{
+    color: orange;
+}
+
+h1,h5{
+    color: white;
+}
+
+i
+{
+    color: white;
+}
+
+button,i{
+    border: none;
+    background-color: transparent;
+}
+
+.halp
+{
+    bottom:0.5%;
+    left: 10%;
+    width: 80%;
+}
+
+
+#gauche
+{
+    margin: 0 2rem;
+}
+
+#droite
+{
+    margin: 0 2rem;
+}
+
+.gauche,.droite,.centre
+{
+    color: white;
+}
+
+
+.reduit
+{
+    width: 40%;
+}
+
+.hide
+{
+    display: none;
+}
+
+#paraGauche
+{
+    top: 25%;
+    left: 10%;
+    color: white;
+    font-size: 2.2rem;
+    z-index: 1;
+}
+
+#paraGauche i
+{
+    color:aqua;
+}
+
+#paraDroite
+{
+    top: 25%;
+    right: 10%;
+    color: white;
+    font-size: 2.2rem;
+    z-index: 1;
+}
+
+#paraDroite i
+{
+    color:aqua;
+}
+
+@keyframes fondu {
+    from {
+      opacity: 0%;
+    }
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+.text
+{
+    width: 500px;
+    font-size: 1.2rem;
+    animation: 1.8s fondu;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width : 992px) {
+
+    .text
+    {
+    width: 200px;
+    font-size: 0.5rem;
+    }
+}
+
+.centre{
+    top:20%;
+    left: 0;
+    right: 0;
+}
+
+.info{
+    margin: 10px;
+}
+
+.info h2{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.info a,.info p{
+    font-size: 16px;
+}
+
+.carousel
+{
+    top:25%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.carousel-item
+{
+    color: white;
+}
+
+.carousel-item img
+{
+    width: 70%;
+}
+
+.carousel-item.active
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-item p
+{
+    max-width: 400px;
+}
+
+@media screen and (max-width : 992px) {
+
+    .carousel-item img
+{
+    width: 30%;
+    margin-left : 20%;
+}
+
+    .carousel-item p
+    {
+    width: 200px;
+    font-size: 0.7rem;
+    margin-right : 20%;
+    }
+}
